@@ -1,0 +1,10 @@
+.container
+  h1 New Post
+  form
+    .form-group
+      label(for='Title') Title
+      input.form-control(placeholder='Title',ng-model='form.title')
+    .form-group
+      label(for='Post') Post
+      textarea.form-control(placeholder='Post',ng-model='form.text')
+    button.btn.btn-default(ng-click='addPost()') Post
